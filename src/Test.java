@@ -8,17 +8,17 @@ public class Test {
 	
 	public static void getNum(int a,int b){	
 		int q = 0;
-		StringBuilder z = new StringBuilder("·Ö±ðÊÇ:"); 
+		StringBuilder z = new StringBuilder("åˆ†åˆ«æ˜¯:"); 
 		for(int x=a; x<=b ;++x){
 			for(int y=2; y<a; ++y){
-				if(x%y ==0){
+				if(x%2 != 0 && x%y !=0){
 					q++;
 					z.append(x+",");
 					break;
 				}
 			}
 		}
-		System.out.print(a+"-"+b+"¼ä×Ü¹²ÓÐ"+q+"¸öËØÊý,");
+		System.out.print(a+"-"+b+"é—´æ€»å…±æœ‰"+q+"ä¸ªç´ æ•°,");
 		System.out.println(z);
 	}
 }
